@@ -1,7 +1,3 @@
---[[local message = Instance.new("Message", workspace)
-message.Text = "Hello\nPlease Join Our New Server, More Updates / Supports\nDiscord: discord.gg/speedhubx (Copied)"
-setclipboard("discord.gg/speedhubx")]]
-
 local Lighting = game:GetService("Lighting")
 local RunService = game:GetService("RunService")
 local LocalPlayer = game:GetService("Players").LocalPlayer
@@ -34,10 +30,10 @@ local ProtectGui = protectgui or (syn and syn.protect_gui) or function(f) end
 
 local Themes = {
 	Names = {
-		"SpeedHubX"
+		"SynioxHub"
 	},
-	SpeedHubX = {
-		Name = "SpeedHubX",
+	SynioxHub = {
+		Name = "Syniox Hub",
 	Accent = Color3.fromRGB(255, 0, 0),
 
 		AcrylicMain = Color3.fromRGB(20, 20, 20),
@@ -86,7 +82,7 @@ local Themes = {
 }
 
 local Library = {
-	Version = "4.0.0",
+	Version = "V1",
 
 	OpenFrames = {},
 	Options = {},
@@ -753,7 +749,7 @@ function Creator.GetThemeProperty(Property)
 	if Themes[Library.Theme][Property] then
 		return Themes[Library.Theme][Property]
 	end
-	return Themes["SpeedHubX"][Property]
+	return Themes["SynioxHub"][Property]
 end
 
 function Creator.New(Name, Properties, Children)
@@ -812,7 +808,7 @@ Library.Creator = Creator
 local New = Creator.New
 
 local GUI = New("ScreenGui", {
-	Name = "Speed_Hub_X_ScreenGui",
+	Name = "Syniox_Hub_ScreenGui",
 	Parent = RunService:IsStudio() and LocalPlayer.PlayerGui or (gethui() or cloneref(game:GetService("CoreGui")) or game:GetService("CoreGui")),
 })
 
