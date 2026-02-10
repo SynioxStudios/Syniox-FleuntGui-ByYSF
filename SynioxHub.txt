@@ -30,10 +30,10 @@ local ProtectGui = protectgui or (syn and syn.protect_gui) or function(f) end
 
 local Themes = {
 	Names = {
-		"SpeedHubX"
+		"SynioxHub"
 	},
 	SpeedHubX = {
-		Name = "SpeedHubX",
+		Name = "SynioxHub",
 	Accent = Color3.fromRGB(255, 0, 0),
 
 		AcrylicMain = Color3.fromRGB(20, 20, 20),
@@ -82,7 +82,7 @@ local Themes = {
 }
 
 local Library = {
-	Version = "4.0.0",
+	Version = "1.0.0",
 
 	OpenFrames = {},
 	Options = {},
@@ -749,7 +749,7 @@ function Creator.GetThemeProperty(Property)
 	if Themes[Library.Theme][Property] then
 		return Themes[Library.Theme][Property]
 	end
-	return Themes["SpeedHubX"][Property]
+	return Themes["SynioxHub"][Property]
 end
 
 function Creator.New(Name, Properties, Children)
@@ -808,7 +808,7 @@ Library.Creator = Creator
 local New = Creator.New
 
 local GUI = New("ScreenGui", {
-	Name = "Speed_Hub_X_ScreenGui",
+	Name = "Syniox_Hub_ScreenGui",
 	Parent = RunService:IsStudio() and LocalPlayer.PlayerGui or (gethui() or cloneref(game:GetService("CoreGui")) or game:GetService("CoreGui")),
 })
 
