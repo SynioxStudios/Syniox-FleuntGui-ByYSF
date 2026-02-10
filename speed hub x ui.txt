@@ -1,7 +1,3 @@
---[[local message = Instance.new("Message", workspace)
-message.Text = "Hello\nPlease Join Our New Server, More Updates / Supports\nDiscord: discord.gg/speedhubx (Copied)"
-setclipboard("discord.gg/speedhubx")]]
-
 local Lighting = game:GetService("Lighting")
 local RunService = game:GetService("RunService")
 local LocalPlayer = game:GetService("Players").LocalPlayer
@@ -34,10 +30,10 @@ local ProtectGui = protectgui or (syn and syn.protect_gui) or function(f) end
 
 local Themes = {
 	Names = {
-		"SpeedHubX"
+		"SynioxHub"
 	},
-	SpeedHubX = {
-		Name = "SpeedHubX",
+	SynioxHub = {
+		Name = "SynioxHub",
 	Accent = Color3.fromRGB(255, 0, 0),
 
 		AcrylicMain = Color3.fromRGB(20, 20, 20),
@@ -138,7 +134,7 @@ local function CloseOpen()
 	Close_ImageButton.BorderColor3 = Color3.fromRGB(255, 0, 0)
 	Close_ImageButton.Position = UDim2.new(0.1021, 0, 0.0743, 0)
 	Close_ImageButton.Size = UDim2.new(0, 59, 0, 49)
-	Close_ImageButton.Image = "rbxassetid://82140212012109"
+	Close_ImageButton.Image = "rbxassetid://86632267572126"
 	Close_ImageButton.Visible = false
 
 	UICorner.Name = "MainCorner"
